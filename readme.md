@@ -1,6 +1,6 @@
 ## 3D Haunted House
 
-3D scene of a haunted house, a graveyard, and a few ghosts to keep things spooky! Created in JavaScript with ThreeJS and WebGL.
+3D scene of a haunted house, a graveyard, and a few ghosts to keep things spooky! Created solely in JavaScript with ThreeJS and WebGL.
 Live demo coming soon..
 
 **To view this scene:**

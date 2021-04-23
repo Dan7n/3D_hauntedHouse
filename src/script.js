@@ -2,6 +2,8 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
+import gsap from "gsap";
+
 
 
 /**
@@ -10,7 +12,7 @@ import * as dat from 'dat.gui'
 // Debug
 const gui = new dat.GUI()
 gui.close();
-dat.GUI.toggleHide();
+// dat.GUI.toggleHide();
 
 
 
@@ -302,9 +304,9 @@ window.addEventListener('resize', () =>
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.x = 4.188
-camera.position.y = 2.465
-camera.position.z = 7.902
+camera.position.x = 3.616
+camera.position.y = 0.581
+camera.position.z = 7.084
 scene.add(camera)
 
 gui.add(camera.position, "x").min(-10).max(10).step(0.001)

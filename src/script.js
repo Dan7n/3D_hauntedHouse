@@ -2,7 +2,6 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 
 /**
@@ -11,6 +10,8 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js'
 // Debug
 const gui = new dat.GUI()
 gui.close();
+dat.GUI.toggleHide();
+
 
 
 
@@ -301,10 +302,15 @@ window.addEventListener('resize', () =>
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.x = 4
-camera.position.y = 2
-camera.position.z = 5
+camera.position.x = 4.188
+camera.position.y = 2.465
+camera.position.z = 7.902
 scene.add(camera)
+
+gui.add(camera.position, "x").min(-10).max(10).step(0.001)
+gui.add(camera.position, "y").min(-10).max(10).step(0.001)
+gui.add(camera.position, "z").min(-10).max(10).step(0.001)
+
 
 // Controls
 const controls = new OrbitControls(camera, canvas)

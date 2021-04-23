@@ -12,7 +12,7 @@ import gsap from "gsap";
 // Debug
 const gui = new dat.GUI()
 gui.close();
-// dat.GUI.toggleHide();
+dat.GUI.toggleHide();
 
 
 
@@ -304,9 +304,9 @@ window.addEventListener('resize', () =>
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.x = 3.616
-camera.position.y = 0.581
-camera.position.z = 7.084
+camera.position.x = 3.832
+camera.position.y = 1.665
+camera.position.z = 7.1
 scene.add(camera)
 
 gui.add(camera.position, "x").min(-10).max(10).step(0.001)

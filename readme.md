@@ -6,7 +6,7 @@
 
 PS. this is still a work in progress
 
-**To view this scene:**
+**To use this repo:**
 
  ``` bash
  # Clone this repo
